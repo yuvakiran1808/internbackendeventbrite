@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-c=***8$sc&-iad4o!$j6&x7j6o4p*qh^_jia3m(f6cwmqvj=3i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Eventapp.urls'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
