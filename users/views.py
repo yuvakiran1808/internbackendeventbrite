@@ -4,7 +4,11 @@ from rest_framework.exceptions import AuthenticationFailed
 from .serializers import UserSerializer
 from .models import User
 import jwt, datetime
+from django.http import HttpResponse
 
+
+def home(request):
+    return HttpResponse("Hello welcome to the app")
 
 # Create your views here.
 class RegisterView(APIView):

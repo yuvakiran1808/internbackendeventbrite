@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from users.views import RegisterView,LoginView,UserView,LogoutView
+from users.views import home,RegisterView,LoginView,UserView,LogoutView
 from events.views import create_event,Like_event,EventListAPIView
 from django.conf import settings
 from django.conf.urls.static import static
@@ -10,9 +10,9 @@ from django.conf.urls.static import static
 
 
 
-
-
 urlpatterns = [
+
+    path('',home),
     path('admin/',admin.site.urls),
     path('api/signup/', RegisterView.as_view()),
     path('api/signin/', LoginView.as_view()),
