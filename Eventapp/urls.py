@@ -11,7 +11,6 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-
     path('',home),
     path('admin/',admin.site.urls),
     path('api/signup/', RegisterView.as_view()),
