@@ -22,3 +22,5 @@ urlpatterns = [
     path('api/events/<int:event_id>/like/', Like_event.as_view()),
     path('api/events/', EventListAPIView.as_view()),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
