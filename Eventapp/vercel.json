@@ -9,5 +9,7 @@
             "src": "/(.*)",
             "dest": "Eventapp/wsgi.py"
         }
-    ]
+    ],
+     "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
+
 }

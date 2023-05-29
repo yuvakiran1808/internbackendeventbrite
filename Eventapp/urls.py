@@ -13,7 +13,7 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/',admin.site.urls),
     path('api/signup/', RegisterView.as_view()),
     path('api/signin/', LoginView.as_view()),
     path('api/user/', UserView.as_view()),
